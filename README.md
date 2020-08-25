@@ -3,7 +3,7 @@ Maxmind geoip IP  to region extraction.
 
 # Getting started
 
->> All following steps assume you are on `macOS Catalina`
+> All following steps assume you are on `macOS Catalina`
 
 ## Installation of go
 

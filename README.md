@@ -66,5 +66,5 @@ This REST endpoint will return result as (with status code 200 and `content-type
 }
 ```
 
-While all error code will return 400 with a text error message
+While all errors will return 400 with a text error message. (Content type - text)
 

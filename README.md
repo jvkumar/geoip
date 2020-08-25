@@ -51,7 +51,7 @@ This server expose one  endpoint `GET /geolocations` with url parameter `ip`. An
 
 Change url parameter `ip` address as needed. It is a mandatory parameter.
 
-This REST endpoint will return result as (with status code 200)
+This REST endpoint will return result as (with status code 200 and `content-type: application/json`)
 
 ```
 {

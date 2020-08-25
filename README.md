@@ -51,3 +51,20 @@ Now go to http://localhost:8080/geolocations?ip=24.3.77.32
 
 Change `ip` address as needed.
 
+This REST endpoint will return result as (with status code 200)
+
+```
+{
+  "city": "Pittsburgh",
+  "state": "Pennsylvania",
+  "state_code": "PA",
+  "zip_code": "15221",
+  "country": "United States",
+  "country_code": "US",
+  "is_restricted": false,
+  "is_cremia_region": false
+}
+```
+
+While all error code will return 400 with a text error message
+

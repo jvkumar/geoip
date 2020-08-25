@@ -47,9 +47,9 @@ $ ./http
 ```
 You may get a popup to allow the traffic. Click `Allow` 
 
-Now go to http://localhost:8080/geolocations?ip=24.3.77.32
+This server expose one  endpoint `GET /geolocations` with url parameter `ip`. An example URI would be `http://localhost:8080/geolocations?ip=24.3.77.32`
 
-Change `ip` address as needed.
+Change url parameter `ip` address as needed. It is a mandatory parameter.
 
 This REST endpoint will return result as (with status code 200)
 

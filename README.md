@@ -11,13 +11,13 @@ Maxmind geoip IP  to region extraction.
 $ brew install golang
 ```
 
-Assuming your `$HOME` is `/Users/<your_mac_user_name>`
+Assuming your `$HOME` is `/Users/<your_mac_user_name>`. You can validate by running command `echo $HOME`
 
 ```
 $ mkdir -p $HOME/go
 $ vi ~/.bash_profile
 ```
-and add
+and add following three lines in your `~/.bash_profile` file
 
 ```
 export GOPATH=$HOME/go
@@ -51,7 +51,7 @@ This server exposes one endpoint `GET /geolocations` with url parameter `ip`. An
 
 Change url parameter `ip` address as needed. It is a mandatory parameter.
 
-This REST endpoint will return result as (with status code 200 and `content-type: application/json`)
+This REST endpoint will return result as (with status code `200` and `content-type: application/json`)
 
 ```
 {
@@ -66,5 +66,5 @@ This REST endpoint will return result as (with status code 200 and `content-type
 }
 ```
 
-While all errors will return 400 with a text error message. (Content type - text)
+While all errors will return `400` with a text error message. (Content type - text)
 

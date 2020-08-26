@@ -25,7 +25,6 @@ func parse(w http.ResponseWriter, req *http.Request) {
   defer duration(track())
   keys        := req.URL.Query()
   ip_to_parse := keys.Get("ip")
-  caller_ip   := req.RemoteAddr
 
   caller_ip, err := getIP(req)
   if err != nil {

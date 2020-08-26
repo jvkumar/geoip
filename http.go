@@ -92,6 +92,12 @@ func parse(w http.ResponseWriter, req *http.Request) {
     return
   }
 
+  if len(record.State) == 0 {
+    w.WriteHeader(http.StatusBadRequest)
+    w.Write([]byte("Maxmind lookup failed to retrieve any information of : " + ip_to_parse + "\n"))
+    return
+  }
+
   location := Result {
     City:       record.City.Names["en"],    
     State:      record.State[0].Names["en"],             

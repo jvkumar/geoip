@@ -31,6 +31,7 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 $ cd ~/go
 $ git clone https://github.com/jvkumar/geoip.git
 $ cd geoip
+$ go get github.com/oschwald/maxminddb-golang
 ```
 
 Download `GeoIP2-City.mmdb` file from Maxmind website and save in `geoip` folder
